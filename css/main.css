@@ -1,0 +1,1427 @@
+body{
+	overflow: hidden;
+	margin:0; 
+	padding:0;
+}
+.cloud_pan{
+	background:url('../images/moving_clouds.png') repeat 0% 100%;
+	animation: pan 120s linear infinite;
+}
+@keyframes pan {
+  0%{
+    background-position: 0% 100%;
+  }
+  100%{
+  	background-position: 2052px 100%;
+  }
+}
+.tree{
+	opacity: 0;
+	position: absolute;
+	bottom: -1%;
+	left: 0;
+	height: 101%;
+	overflow: hidden;
+	width: 100%;
+	background: url(../images/tree_leaves_two.png) no-repeat 0% 95%/160%,
+				url(../images/midnight.png) no-repeat  120% -188%/15%,  
+				url(../images/leaves.png) no-repeat 0% 277%/100%,  
+				url(../images/cliff.png) no-repeat -100% 32%/50% ;
+	z-index: 9;
+}
+
+.tree.zero{
+	opacity: 1;
+	background: url(../images/tree_leaves_two.png) no-repeat 0% 100%/159%,
+				url(../images/midnight.png) no-repeat  120% -188%/15%, 
+				url(../images/leaves.png) no-repeat 0% 277%/100%,  
+				url(../images/cliff.png) no-repeat -100% 32%/50% ;
+				-webkit-transition: all 1000ms linear;
+				-moz-transition: 	all 1000ms linear;
+				-ms-transition: 	all 1000ms linear;
+				 -o-transition: 	all 1000ms linear;
+				transition: 		all 1000ms linear;
+}
+.tree.one{
+	background: url(../images/tree_leaves_two.png) no-repeat 11% 100%/159%,
+				url(../images/midnight.png) no-repeat  120% -188%/15%,
+				url(../images/leaves.png) no-repeat 0% 277%/100%,  
+				url(../images/cliff.png) no-repeat -100% 32%/50%;
+}
+.tree.two{
+	background: url(../images/tree_leaves_two.png) no-repeat 0% 93.5%/159.5%,
+				url(../images/midnight.png) no-repeat  120% -188%/15%, 
+				url(../images/leaves.png) no-repeat 0% 277%/100%,  
+				url(../images/cliff.png) no-repeat -100% 32%/50% ;
+}
+.tree.three{
+	background: url(../images/tree_leaves_two.png) no-repeat -40% 81%/160%, 
+				url(../images/midnight.png) no-repeat  120% -188%/15%,
+				url(../images/leaves.png) no-repeat 0% 277%/100%,  
+				url(../images/cliff.png) no-repeat -100% 32%/50% ;
+}
+.tree.four{
+	background: url(../images/tree_leaves_two.png) no-repeat 13% 43%/194% , 
+				url(../images/midnight.png) no-repeat  112% -18%/25%, 
+				url(../images/leaves.png) no-repeat 0% 277%/100%,  
+				url(../images/cliff.png) no-repeat -100% 32%/50% ;
+}
+@media screen and (min-width: 1900px) and (device-aspect-ratio: 16/9) {
+	.tree.four{
+		background: url(../images/tree_leaves_two.png) no-repeat -3% 43%/160%,
+					url(../images/midnight.png) no-repeat  102% 8%/15%, 
+					url(../images/leaves.png) no-repeat 0% 277%/100%,  
+					url(../images/cliff.png) no-repeat -100% 32%/50% ;
+	}
+}
+@media screen and (device-aspect-ratio: 4/3), screen and  (device-aspect-ratio: 5/4){
+	.tree.four{
+		background: url(../images/tree_leaves_two.png) no-repeat 17% 43%/217%,
+					url(../images/midnight.png) no-repeat  143% 46%/33%,  
+					url(../images/leaves.png) no-repeat 0% 277%/100%,  
+					url(../images/cliff.png) no-repeat -100% 32%/50% ;
+	}
+}
+.tree.six{
+	background: url(../images/tree_leaves_two.png) no-repeat 104% 41%/210%,
+				url(../images/midnight.png) no-repeat 4% -17%/15%,
+				url(../images/leaves.png) no-repeat 0% 188%/100%,  
+				url(../images/cliff.png) no-repeat -6% 36%/50%;
+}
+
+@media screen and (device-aspect-ratio: 8/5){
+	.tree.six{
+		background: url(../images/tree_leaves_two.png) no-repeat 104% 41%/210% , 
+					url(../images/midnight.png) no-repeat 4% -17%/15%,
+					url(../images/leaves.png) no-repeat 0% 198%/100%,  
+					url(../images/cliff.png) no-repeat -6% 36%/50%;
+	}
+}
+@media screen and (min-width: 1900px) and (device-aspect-ratio: 16/9) {
+	.tree.six{
+		background: url(../images/tree_leaves_two.png) no-repeat 127% 41%/160%,
+					url(../images/midnight.png) no-repeat 15% 7%/12%,
+					url(../images/leaves.png) no-repeat 0% 188%/100%, 
+					url(../images/cliff.png) no-repeat -6% 36%/50% ;
+	}
+}
+@media screen and (device-aspect-ratio: 4/3), screen and  (device-aspect-ratio: 5/4){
+	.tree.six{
+		background: url(../images/tree_leaves_two.png) no-repeat 85% 41%/289%,
+					url(../images/midnight.png) no-repeat 2% -10%/21%,
+					url(../images/leaves.png) no-repeat 0% 138%/100%,  
+					url(../images/cliff.png) no-repeat -6% 51%/50%;
+	}
+}
+.tree.seven{
+	background: url(../images/tree_leaves_two.png) no-repeat 114% 41%/210%, 
+				url(../images/midnight.png) no-repeat -10% 64%/15%,
+				url(../images/leaves.png) no-repeat 0% 277%/100%,  
+				url(../images/cliff.png) no-repeat -100% 32%/50% ;
+}
+@media screen and (min-width: 1900px) and (device-aspect-ratio: 16/9) {
+	.tree.seven{
+		background: url(../images/tree_leaves_two.png) no-repeat 130% 41%/160%, 
+					url(../images/midnight.png) no-repeat 13% 39%/12%, 
+					url(../images/leaves.png) no-repeat 0% 277%/100%,  
+					url(../images/cliff.png) no-repeat -100% 32%/50% ;
+	}
+}
+@media screen and (device-aspect-ratio: 4/3), screen and  (device-aspect-ratio: 5/4){
+	.tree.seven{
+		background: url(../images/tree_leaves_two.png) no-repeat 91% 43%/289%,
+					url(../images/midnight.png) no-repeat -13% 20%/21%, 
+					url(../images/leaves.png) no-repeat 0% 277%/100%,  
+					url(../images/cliff.png) no-repeat -100% 32%/50% ;
+	}
+}
+.tree.eight{
+	background: url(../images/tree_leaves_two.png) no-repeat 104% 24.5%/180%,
+				url(../images/midnight.png) no-repeat 9% 500%/21%,  
+				url(../images/leaves.png) no-repeat 0% 277%/100%,  
+				url(../images/cliff.png) no-repeat -100% 32%/50% ;
+}
+@media screen and (min-width: 1910px) and (device-aspect-ratio: 16/9) {
+	.tree.eight{
+		background: url(../images/tree_leaves_two.png) no-repeat 117% 24.5%/160%, 
+					url(../images/midnight.png) no-repeat 9% 500%/21%,  
+					url(../images/leaves.png) no-repeat 0% 277%/100%,  
+					url(../images/cliff.png) no-repeat -100% 32%/50% ;
+	}
+}
+@media screen and (device-aspect-ratio: 4/3), screen and  (device-aspect-ratio: 5/4){
+	.tree.eight{
+		background: url(../images/tree_leaves_two.png) no-repeat 87% 24.5%/229%,
+					url(../images/midnight.png) no-repeat 9% 500%/21%, 
+					url(../images/leaves.png) no-repeat 0% 277%/100%,  
+					url(../images/cliff.png) no-repeat -100% 32%/50% ;
+	}
+}
+.tree.nine{
+		background: url(../images/tree_leaves_two.png) no-repeat 99% 2.5%/182%, 
+					url(../images/midnight.png) no-repeat -4% 500%/21%,  
+					url(../images/leaves.png) no-repeat 0% 277%/100%,  
+					url(../images/cliff.png) no-repeat -100% 32%/50% ;
+					-webkit-transition: all 0ms 500ms linear;
+					-moz-transition: 	all 0ms 500ms linear;
+					-ms-transition: 	all 0ms 500ms linear;
+					 -o-transition: 	all 0ms 500ms linear;
+					transition: 		all 0ms 500ms linear;
+}
+.tree.yammer{
+	opacity: 1;
+	background: url(../images/tree_leaves_two.png) no-repeat 99% -23.5%/182%, 
+				url(../images/midnight.png) no-repeat  -100% 400%/21%, 
+				url(../images/leaves.png) no-repeat 0% 277%/100%,  
+				url(../images/cliff.png) no-repeat -100% 32%/50% ;
+}
+.hill{
+	opacity: 0;
+	position: absolute;
+	bottom: 0;
+	top: 35%;
+	left: 0%;
+	background-image: url(../images/hill.png);
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size:125%;
+	background-position-x: 100%;
+}
+.hill.zero{
+	opacity: 1;
+	background-position-x:0%;
+	top:-0%;
+	-webkit-transition: all  1000ms .6s ease-out;
+	-moz-transition: 	all  1000ms .6s ease-out;
+	-ms-transition: 	all  1000ms .6s ease-out;
+	-o-transition: 		all  1000ms .6s ease-out;
+	transition: 		all  1000ms .6s ease-out;
+}
+.hill.one{
+	background-position-x:80%;
+	top: -0%;
+	-webkit-transition: all  1000ms ease-out;
+	-moz-transition: 	all  1000ms ease-out;
+	-ms-transition: 	all  1000ms ease-out;
+	-o-transition: 		all  1000ms ease-out;
+	transition: 		all  1000ms ease-out;
+}
+.hill.two{
+	top: 33%;
+}
+.hill.three{
+	top: 50%;
+}
+.hill.four{
+	top: 60%; 
+	left: 0%;
+}
+.hill.seven,
+.hill.six{
+	top: 60%;
+	background-position-x: 0%;
+}
+.hill.eight{
+	top: 65%;
+}
+.hill.nine_jump,
+.hill.nine{
+	top: 70%;
+}
+.hill.yammer{
+	opacity: 0;
+}
+.yammer{
+	opacity: 0;
+}
+
+.tree.yammer #embedded-feed{
+	z-index: 99;
+	position: absolute;
+    height: 82%;
+    width: 100%;
+    top: 58%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+}
+#document .yj-btn{
+	background-color: #ff0000;
+}
+.tree.yammer .yammer{
+	opacity: 1;
+	-webkit-transition: all 0ms 500ms linear;
+	-moz-transition: 	all 0ms 500ms linear;
+	-ms-transition: 	all 0ms 500ms linear;
+	-o-transition: 		all 0ms 500ms linear;
+	transition: 		all 0ms 500ms linear;
+
+}
+
+.frame{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+	overflow: visible;
+}
+.frame_transition{
+	opacity: 0;
+	position: absolute;
+	width: 101%;
+	height: 101%;
+	top: 0%;
+	left: 0%;
+	overflow: visible;
+	z-index: 0; 
+}
+.tree.yammer > .frame > .frame_transition,
+.nine > .frame > .frame_transition{
+ 	opacity: 1;
+ 	z-index: 999;
+ 	-webkit-transition: all 0625ms ease-out;
+	-moz-transition:    all 0625ms ease-out;
+	-ms-transition:     all 0625ms ease-out;
+	-o-transition:      all 0625ms ease-out;
+	 transition:        all 0625ms ease-out;
+ }
+ .element {
+  animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running; 
+}
+.element {
+  animation: 
+    stretch
+    1.5s
+    ease-out
+    0s
+    alternate
+    infinite
+    none
+    running;
+}
+ .nine > .frame > .frame_transition{
+  	-webkit-animation: fadeIn ease-in 1s forwards ;
+  	-moz-animation:    fadeIn ease-in 1s forwards ;
+  	-o-animation:      fadeIn ease-in 1s forwards ;
+  	animation:         fadeIn ease-in 1s forwards ;
+ }
+.tree.yammer > .frame > .frame_transition{
+	-webkit-animation: fadeInTwo ease-in 1s forwards ;
+	-moz-animation:    fadeInTwo ease-in 1s forwards ;
+	-o-animation:      fadeInTwo ease-in 1s forwards ;
+	animation:         fadeInTwo ease-in 1s forwards ;
+}
+.tree.yammer > .frame.yammer > .frame_transition,
+.nine > .frame.nine.a > .frame_transition{
+	z-index: 0;
+}
+
+@keyframes fadeIn {
+    100%, 0% {
+     	opacity: 0;
+        background-color: #62784300;
+        background-image: none;
+    }
+    99%{
+    	background-image: url(../images/transition_back.png);
+    	background-position: 0% 100%;
+    } 
+    1%{
+    	background-image: url(../images/transition_back.png);
+    	background-position: 0% 50%;
+    }
+    50%{
+    	opacity: 1;
+    	background-color: #627843ff;
+    	background-image: url(../images/transition_back.png);
+    }
+}
+@keyframes fadeInTwo {
+    100%, 0% {
+     	opacity: 0;
+        background-color: #62784300;
+        background-image: none;
+    }
+    99%{
+    	background-image: url(../images/transition_back.png);
+    	background-position: 0% 100%;
+    } 
+    1%{
+    	background-image: url(../images/transition_back.png);
+    	background-position: 0% 50%;
+    }
+    50%{
+    	opacity: 1;
+    	background-color: #627843ff;
+    	background-image: url(../images/transition_back.png);
+    }
+}
+.cliff{
+	position: absolute;
+	width: 50%;
+	height: 147%;
+	top: -74%;
+	left: -47%;;
+	z-index: 9;
+	background-repeat: no-repeat;
+	background-image: url(../images/cliff.png);
+	overflow: visible;
+	-webkit-transition: left 1000ms ease;
+	-moz-transition: 	left 1000ms ease;
+	-ms-transition: 	left 1000ms ease;
+	-o-transition: 		left 1000ms ease;
+	transition: 		left 1000ms ease;
+}
+.hill.six > .cliff{
+	left: 0%;
+}
+.hill.seven > .cliff{
+	left: -47%;;
+}
+.leaves{
+	position: absolute;
+	width: 102%;
+	height: 32%;
+	top: 106%;
+	left: 0%;;
+	z-index: 9;
+	background-repeat: no-repeat;
+	background-image: url(../images/leaves.png);
+	overflow: visible;
+	-webkit-transition: top 1000ms ease;
+	-moz-transition: 	top 1000ms ease;
+	-ms-transition: 	top 1000ms ease;
+	-o-transition: 		top 1000ms ease;
+	transition: 		top 1000ms ease;
+}
+.hill.six > .leaves{
+	top: 12%;
+}
+.hill.seven > .leaves{
+	top: 106%;
+}
+.frame img{
+	position: absolute;
+	opacity: 0;
+	-webkit-transition: opacity 200ms linear;
+	-moz-transition: 	opacity 200ms linear;
+	-ms-transition: 	opacity 200ms linear;
+	-o-transition: 		opacity 200ms linear;
+	transition: 		opacity 200ms linear;
+}
+.frame.zero.a > .zero > img.text_1,
+.frame.zero.a > .zero > img.owl_1,
+.frame.one.a > .one > img.text_1,
+.frame.one.a > .one > img.text_2,
+.frame.one.a > .zero > img.owl_1,
+.frame.one.a > .one > .roots_con,
+.frame.one.a > .one > .roots_con > img.root.blue, .frame.one.a > .one > .roots_con > img.root.yellow, .frame.one.a > .one > .roots_con > img.root.green, .frame.one.a > .one > .roots_con > img.root.purple, .frame.two.a > .zero > img.owl_1,
+.frame.two.a > .two > img.text_1,
+.frame.two.a > .two > img.text_2,
+.frame.three.a > .three > img.text_1,
+.frame.three.b > .three > img.text_2,
+.frame.four.a > .zero > img.owl_1,
+.frame.four.a > .four > img,
+.frame.six.a > .six > img.text_1,
+.frame.six.a > .six > img.text_2, .frame.six.b > .six > img.text_3, .frame.six.c > .six > img.text_3, .frame.six.d > .six > img.text_3, .frame.six.e > .six > img.text_3, .frame.six.f > .six > img.text_3, .frame.six.g > .six > img.text_3,
+.frame.six.b > .six > .text_con,
+.frame.six.b > .six > .text_con > img.text_4,
+.frame.six.b > .six > .text_con .check.one, .frame.six.b > .six > .text_con .check.two, .frame.six.b > .six > .text_con .check.thr, .frame.six.b > .six > .text_con .check.for, .frame.six.b > .six > .text_con .check.fve,
+.frame.seven.a > .seven > img.text_1,
+.frame.seven.b > .seven > img.script,
+.frame.eight.a > .eight > .owl_eight_con,
+.frame.eight.a > .eight > .owl_eight_con img,
+.frame.eight.a > .eight > img,
+.frame.nine.a > .nine > img.text_2,
+.frame.nine.a > .nine > .ipad_section_wrap,
+.frame.nine.a > .nine > .ipad_section_wrap img,
+.frame.nine.a > .nine > .ipad_section_wrap > .our_team_ipad_wrapper,
+.frame.nine.a > .nine > .ipad_section_wrap > .our_team_ipad_wrapper > .our_team_ipad_team,
+.frame.nine.a > .nine > .ipad_section_wrap > .our_team_ipad_wrapper > .our_team_ipad_buttons,
+.frame.nine.a > .nine > .ipad_section_wrap > .our_team_ipad_wrapper > .our_team_ipad_buttons  .our_team_button,
+.frame.nine.a > .nine > .ipad_section_wrap > .our_team_ipad_wrapper > .our_team_ipad_info,
+.frame.nine.a > .nine > .ipad_section_wrap > .our_team_ipad_wrapper > .member_info_jill,
+.frame.nine.a > .nine > .ipad_section_wrap > .our_team_ipad_wrapper > .member_info_linda ,
+.frame.nine.a > .nine > .ipad_section_wrap > .our_team_ipad_wrapper > .member_info_joanna,
+.frame.nine.a > .nine > .ipad_section_wrap > .our_team_ipad_wrapper > .member_info_peter{
+	opacity: 1;
+	-webkit-transition: opacity 600ms ease-in;
+	-moz-transition: 	opacity 600ms ease-in;
+	-ms-transition: 	opacity 600ms ease-in;
+	-o-transition: 		opacity 600ms ease-in;
+	transition: 		opacity 600ms ease-in;
+	        z-index: 9;
+}
+
+.tree.nine > .frame > .owl,
+.tree.yammer > .frame > .owl,
+.owl{
+	position: absolute;
+	opacity: 0;
+	bottom: -14.5%;
+	left: -18%;
+	width: 73%;
+	background:url(../images/owl/owl_fas_sweatert.gif) no-repeat 0%/100%;
+
+	-webkit-transition: bottom 1500ms ease, left 1500ms ease, width 1500ms ease,opacity 500ms ease ;
+	-moz-transition: 	bottom 1500ms ease, left 1500ms ease, width 1500ms ease,opacity 500ms ease ;
+	-ms-transition: 	bottom 1500ms ease, left 1500ms ease, width 1500ms ease,opacity 500ms ease ;
+	-o-transition: 		bottom 1500ms ease, left 1500ms ease, width 1500ms ease,opacity 500ms ease ;
+	transition: 		bottom 1500ms ease, left 1500ms ease, width 1500ms ease,opacity 500ms ease ;     		
+}
+.tree.two >   .frame> .owl,
+.tree.three > .frame > .owl,
+.tree.four >  .frame > .owl,
+.tree.six >   .frame > .owl{
+	opacity: 1;
+}
+.tree.two > .frame> .owl{
+	bottom: -6.5%;
+	left: -13%;
+	width: 63%;
+}
+.tree.three >  .frame > .owl{
+	width: 35%;
+	left: 53%; 
+	bottom: 28%;
+}
+.tree.four > .frame > .owl{
+	bottom: -3%;
+	left: -19%;
+	width: 85%;
+}
+.tree.six > .frame > .owl{
+	left: -100%;
+	bottom: 100%;
+}
+.tree.nine > .frame > .owl,
+.tree.yammer > .frame >  .owl{
+	opacity: 0;
+}
+	
+.frame > .owl > img{
+	position: relative;
+	width: 100%;
+}
+.frame.three.a > .owl{
+	background: url(../images/owl/hover_swater.gif) no-repeat 0%/100%;
+	bottom: 10%;
+	-webkit-transition: bottom 1000ms ease, left 1000ms ease, width 1000ms ease,opacity 500ms ease ;
+	-moz-transition: 	bottom 1000ms ease, left 1000ms ease, width 1000ms ease,opacity 500ms ease ;
+	-ms-transition: 	bottom 1000ms ease, left 1000ms ease, width 1000ms ease,opacity 500ms ease ;
+	-o-transition: 		bottom 1000ms ease, left 1000ms ease, width 1000ms ease,opacity 500ms ease ;
+	transition: 		bottom 1000ms ease, left 1000ms ease, width 1000ms ease,opacity 500ms ease ;
+}
+.frame.three.b > .owl{
+	background: url(../images/owl/hover_swater.gif) no-repeat 0%/100%;
+	bottom: 57%;
+	-webkit-transition: bottom 1000ms ease, left 1000ms ease, width 1000ms ease,opacity 500ms ease ;
+	-moz-transition: 	bottom 1000ms ease, left 1000ms ease, width 1000ms ease,opacity 500ms ease ;
+	-ms-transition: 	bottom 1000ms ease, left 1000ms ease, width 1000ms ease,opacity 500ms ease ;
+	-o-transition: 		bottom 1000ms ease, left 1000ms ease, width 1000ms ease,opacity 500ms ease ;
+	transition: 		bottom 1000ms ease, left 1000ms ease, width 1000ms ease,opacity 500ms ease ;
+}
+.frame.four.a > .owl{
+	bottom: 14%;
+	left: -7%;
+	width: 62%;
+	background: url(../images/owl/hover_swater.gif) no-repeat 0%/100%;
+}
+.frame.six.a > .owl{
+	bottom: 34%;
+	left: -11%;
+	width: 43%;
+	background: url(../images/owl/hover_swater.gif) no-repeat 0%/100%;
+}
+.frame.two.a > .owl,
+.frame.six.a > .owl,
+.frame.four.a > .owl,
+.frame.six.c > .owl,
+.frame.six.b > .owl{
+	opacity: 0;
+}
+.zero > img.owl_1{
+	top: 75%;
+	left: 150%; 
+	transform: translate(-50%, -50%);
+	z-index: 9;
+	width: 67%;
+}
+.frame.zero.a .zero > img.owl_1{
+	left: 79%;
+}
+.frame.one.c .zero > img.owl_1,
+.frame.one.d .zero > img.owl_1,
+.frame.one.e .zero > img.owl_1,
+.frame.one.a .zero img.owl_1,
+.frame.one.a .zero img.owl_1{
+	left: 19%;
+}
+.frame.two.a .zero img.owl_1{
+	bottom: -10%;
+	width: 53%;
+	left: 19%;
+}
+.frame.four.a .zero > img.owl_1 {
+	top: 59%;
+	left: 24%;
+	transform: translate(-50%, -50%);
+	z-index: 9;
+	width: 67%;
+}
+.zero > img.text_1{
+	top: 50%;
+	left: 45%;
+	transform: translate(-50%, -50%);
+	width: 32%;
+}
+.one > img.text_1{
+	top: 10%;
+	left: 12%;
+	width: 26%;
+}
+img.root{
+	left: 0;
+	top: 0;
+	width: 100%;
+
+}
+
+.frame.one.a > .one > .roots_con > img.root.blue{
+	-webkit-transition: opacity 600ms 1.2s ease-in;
+	-moz-transition: 	opacity 600ms 1.2s ease-in;
+	-ms-transition: 	opacity 600ms 1.2s ease-in;
+	-o-transition: 		opacity 600ms 1.2s ease-in;
+	transition: 		opacity 600ms 1.2s ease-in;
+}
+.frame.one.a > .one > .roots_con > img.root.yellow{
+	-webkit-transition: opacity 600ms 1.8s ease-in;
+	-moz-transition: 	opacity 600ms 1.8s ease-in;
+	-ms-transition: 	opacity 600ms 1.8s ease-in;
+	-o-transition: 		opacity 600ms 1.8s ease-in;
+	transition: 		opacity 600ms 1.8s ease-in;
+}
+.frame.one.a > .one > .roots_con > img.root.green{
+	-webkit-transition: opacity 600ms 2.4s ease-in;
+	-moz-transition: 	opacity 600ms 2.4s ease-in;
+	-ms-transition: 	opacity 600ms 2.4s ease-in;
+	-o-transition: 		opacity 600ms 2.4s ease-in;
+	transition: 		opacity 600ms 2.4s ease-in;
+}
+.frame.one.a > .one > .roots_con > img.root.purple{
+	position: relative;
+	-webkit-transition: opacity 600ms 3s ease-in;
+	-moz-transition: 	opacity 600ms 3s ease-in;
+	-ms-transition: 	opacity 600ms 3s ease-in;
+	-o-transition: 		opacity 600ms 3s ease-in;
+	transition: 		opacity 600ms 3s ease-in;
+}
+
+.roots_con{
+	opacity: 0;
+	width: 32%;
+	left: 52%;
+	overflow: hidden;
+	position: absolute;
+	top: 17%;
+}
+.two > img.text_2,
+.one > img.text_2{
+	bottom: 1%;
+	right: 5%;
+	width: 29%;
+}
+.two > img.text_1{
+	top: 12%;
+	left: 15%;
+	width: 40%;
+}
+.three > img.owl_1{
+	top: 74%;
+	right: 34%;
+	width: 100%;
+	transform: translateY(-50%);
+}
+.three > img.owl_2{
+	bottom: 0;
+	left: 7%;
+	z-index: 9;
+}
+.three > img.text_1,
+.three > img.text_2{
+	top: 56%;
+	left: 48%;
+	transform: translate(-50%, -50%);
+	width: 53%;
+}
+.four > img.owl_1{
+	right: 5%;
+	top: 0%;
+	width: 43%;
+}
+.four > img.text_1{
+	top: 50%;
+	left: 54%;
+	transform: translate(-50%, -50%);
+	width: 37%;
+}
+.six > img.text_1{
+	top: 25%;
+	right: 15%;
+	width: 50%;
+}
+.six > img.text_2,
+.six > img.text_3{
+	bottom: 12%;
+	left: 0%;
+	width: 28%;
+}
+.six > .text_con{
+	position: absolute;
+	left: 64%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+}
+.text_con > .text_4{
+	position: relative;
+	width: 100%;
+}
+.text_con > .check{
+	position: absolute;
+	left: 4%;
+	width: 6%;
+}
+.frame.six.b > .six > .text_con > .check.one{
+	bottom: 89%;
+	-webkit-transition: opacity 600ms .5s ease-in;
+	-moz-transition: 	opacity 600ms .5s ease-in;
+	-ms-transition: 	opacity 600ms .5s ease-in;
+	-o-transition: 		opacity 600ms .5s ease-in;
+	transition: 		opacity 600ms .5s ease-in;
+}
+.frame.six.b > .six > .text_con > .check.two{
+	bottom: 70.2%;
+	-webkit-transition: opacity 600ms 1.5s ease-in;
+	-moz-transition: 	opacity 600ms 1.5s ease-in;
+	-ms-transition: 	opacity 600ms 1.5s ease-in;
+	-o-transition: 		opacity 600ms 1.5s ease-in;
+	transition: 		opacity 600ms 1.5s ease-in;
+}
+.frame.six.b > .six > .text_con > .check.thr{
+	bottom: 45.5%;
+	-webkit-transition: opacity 600ms 2.5s ease-in;
+	-moz-transition: 	opacity 600ms 2.5s ease-in;
+	-ms-transition: 	opacity 600ms 2.5s ease-in;
+	-o-transition: 		opacity 600ms 2.5s ease-in;
+	transition: 		opacity 600ms 2.5s ease-in;
+}
+.frame.six.b > .six > .text_con > .check.for{
+	bottom: 18.8%;
+	-webkit-transition: opacity 600ms 3.5s ease-in;
+	-moz-transition: 	opacity 600ms 3.5s ease-in;
+	-ms-transition: 	opacity 600ms 3.5s ease-in;
+	-o-transition: 		opacity 600ms 3.5s ease-in;
+	transition: 		opacity 600ms 3.5s ease-in;
+}
+.frame.six.b > .six > .text_con >  .check.fve{
+	bottom: 8.5%;
+	-webkit-transition: opacity 600ms 4.5s ease-in;
+	-moz-transition: 	opacity 600ms 4.5s ease-in;
+	-ms-transition: 	opacity 600ms 4.5s ease-in;
+	-o-transition: 		opacity 600ms 4.5s ease-in;
+	transition: 		opacity 600ms 4.5s ease-in;
+}
+.seven > img.text_1{
+    width: 74%;
+    left: 60%;
+    top: 50%;
+	transform: translate(-50%, -50%);
+}
+.seven > img.text_2{
+	width: 59%;
+	right: 0;
+	top: 27%;
+}
+.seven > img.text_3{
+	width: 59%;
+	right: 0;
+	top: 27%;
+}
+.seven > img.owl_flyin,
+.seven > .graph{
+	opacity: 1;
+	width: 61%;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 110%;
+	-webkit-transition: bottom 1000ms ease-in;
+	-moz-transition: 	bottom 1000ms ease-in;
+ 	-ms-transition: 	bottom 1000ms ease-in;
+  	-o-transition: 		bottom 1000ms ease-in;
+     transition: 		bottom 1000ms ease-in;
+     z-index: 9;
+}
+.frame.seven.b .seven > img.owl_flyin{
+	bottom: 10%;
+	-webkit-transition: bottom 1000ms ease-out;
+	-moz-transition: 	bottom 1000ms ease-out;
+	-ms-transition: 	bottom 1000ms ease-out;
+	-o-transition:		bottom 1000ms ease-out;
+	transition: 		bottom 1000ms ease-out;
+}
+.seven > > .graph > img.owl_up,
+.seven > > .graph > img.owl_up_fast{
+	width: 69%;
+	bottom: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.seven .graph > img.graph_1{
+	width: 69%;
+	bottom: 27%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.seven > img.script{
+	width: 23%;
+	transform: translate(-100%, -100%);
+	
+}
+.seven > .script_overlay{
+	position: absolute;;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+.frame.seven.b > .seven > img.script{
+	z-index: 99;
+}
+.eight > .text_1{
+	position: absolute;
+	top: 38%;
+	left: 0;
+	width: 28%;
+}
+.eight > .owl_eight_con{
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 28%;
+	right: 32%;
+	width: 39%;
+}
+.eight > .owl_eight_con > .owl_1{
+	position: relative;
+	width: 100%;
+}
+.eight > .owl_eight_con > a > img.owl_tel{
+	right: 1%;
+    top: 2.5%;
+    width: 26%;
+}
+@media screen and (min-width: 1910px) and (device-aspect-ratio: 16/9) {
+	.eight > .owl_1{
+		top: 21%;
+		right: 32%;
+	}
+}
+@media screen and (device-aspect-ratio: 8/5)){
+	.eight > .owl_1{
+		top: 27%;
+		right: 32%;
+	}
+}
+@media screen and (device-aspect-ratio: 4/3), screen and  (device-aspect-ratio: 5/4){
+	.eight > .owl_1{
+		top: 39%;
+		right: 22%;
+	}
+	.eight > .text_1{
+		width: 38%;
+	}
+}
+.nine > img.text_1 {
+    left: 27%;
+	top: 22%;
+	height: 75%;
+}
+.nine > img.text_2 {
+    bottom: 13%;
+	left: 1%;
+	width: 21%;
+}
+@media screen and (device-aspect-ratio: 4/3), screen and  (device-aspect-ratio: 5/4){
+	.nine > img.text_2 {
+		width: 30%;
+	}
+}
+.frame.yammer > header,
+.frame.nine.a > header,
+.frame.eight.a > header,
+.frame.zero.a > header {
+	top:0px;
+}
+header {
+	position:absolute;
+	top:-175px;
+	height:75px;
+	width: 85%;
+	padding:2% 0 0 50px;
+	z-index:999;
+	-webkit-transition: all 600ms ease-out;
+	-moz-transition: 	all 600ms ease-out;
+	-ms-transition: 	all 600ms ease-out;
+	-o-transition: 		all 600ms ease-out;
+	transition: 		all 600ms ease-out;
+     
+	}	
+	.logo {
+		float:left;
+		width: 26%;
+	}
+	.logo img{
+		position: relative;
+		opacity: 1;
+		width: 100%;
+	}
+	.menu_up {
+		top:-999px;
+	}
+	.menu ul {
+		margin:0;
+	}
+	.menu{
+		width: 74%;
+	}
+	.menu, .menu li {
+		float:left;
+		list-style-type: none;
+	}	
+
+.menu li {
+	background: initial!important;
+	cursor: pointer;
+	float:left;
+    margin: 0px 8% 20px 0px;
+	color:#FFFFFF;
+	text-transform: uppercase;
+	font-weight:bold;
+	letter-spacing:0.05em;
+	font-size:1vw;
+	text-align: center;
+	font-family:'Helvetica';
+	text-shadow:1px 1px 2px rgba(0,0,0,0.4);
+}
+.menu li a {
+	color:#FFFFFF;
+	text-transform: uppercase;
+	font-weight:bold;
+	letter-spacing:0.05em;
+	font-size:1vw;
+	font-family:'Helvetica';
+	text-shadow:1px 1px 2px rgba(0,0,0,0.4);
+}
+.nine > .ipad_section_wrap {
+	position: absolute;
+	left: 27%;
+	top: 22%;
+	height: 100%;
+	width: 25%;
+}
+.frame.nine.a > .nine > .ipad_section_wrap{
+	z-index: 99;
+}
+.nine > .ipad_section_wrap img {
+	opacity: 0;
+	height: 75%;
+	position: relative;
+}
+.frame.nine.a > .nine > .ipad_section_wrap img{
+	z-index: 1!important;
+}
+.ipad_section_wrap > .our_team_ipad_wrapper {
+	opacity: 0;
+    margin: 0 auto;
+	background: url(../images/ipad-ourteam.png) no-repeat 64% 49%/84%,
+				url(../images/ipad-2.png) no-repeat 0% 0%/100%;
+	position: absolute;
+	left: 5%;
+	top: 16%;
+	transform: rotate(-7deg);
+}
+.frame.nine.a > .nine > .ipad_section_wrap > .our_team_ipad_wrapper{
+	z-index: 99!important;
+}
+.frame.nine.a > .nine > .ipad_section_wrap > .our_team_ipad_wrapper > img.sudo_fill{
+	width: 100%;
+	visibility: hidden;
+}
+.nine > .ipad_section_wrap > .our_team_ipad_wrapper > .our_team_ipad_team {
+  opacity: 0;
+  position: absolute;
+  top: 39px;
+  left: 68px;
+}
+.frame.nine.a > .nine > .ipad_section_wrap > .our_team_ipad_wrapper > .our_team_ipad_team{
+	 z-index: 1!important;
+}
+.nine > .ipad_section_wrap > .our_team_ipad_wrapper > .our_team_ipad_buttons {
+	overflow: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 11%;
+	left: 12%;
+	width: 80%;
+  
+}
+.frame.nine.a > .nine > .ipad_section_wrap > .our_team_ipad_wrapper > .our_team_ipad_buttons{
+	z-index: 99!important;
+}
+.nine > .ipad_section_wrap > .our_team_ipad_wrapper > .our_team_ipad_buttons  .our_team_button {
+  opacity: 0;
+  float: left;
+  margin-right: 5%;
+  width: 21%;
+  height: 32px;
+  cursor: pointer;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.nine > .ipad_section_wrap > .our_team_ipad_wrapper > .our_team_ipad_buttons  .our_team_button:last-of-type{
+
+margin-right: 0%
+}
+
+.jill {
+  background-image: url("../images/button-jill.png");
+  cursor: pointer;
+}
+
+.jill.on {
+  background-image: url("../images/button-jill-on.png");
+}
+
+.linda {
+  background-image: url("../images/button-linda.png");
+}
+
+.linda.on {
+  background-image: url("../images/button-linda-on.png");
+}
+
+.joanna {
+  background-image: url("../images/button-joanna.png");
+}
+
+.joanna.on {
+  background-image: url("../images/button-joanna-on.png");
+}
+
+.peter {
+  background-image: url("../images/button-peter.png");
+}
+
+.peter.on {
+  background-image: url("../images/button-peter-on.png");
+}
+
+.nine > .ipad_section_wrap > .our_team_ipad_wrapper > .our_team_ipad_info {
+  	position: absolute;
+  	background-size: 100%;
+  	background-repeat: no-repeat;
+  	width: 70%;
+  	right: 5.1%;
+  	bottom: 8.3%;
+}
+.nine > .ipad_section_wrap > .our_team_ipad_wrapper > .our_team_ipad_info > img.sudo_fill{
+	visibility: hidden;
+	width: 100%;
+	height: initial;
+
+}
+.nine > .ipad_section_wrap > .our_team_ipad_wrapper > #member_info{
+	opacity: 0;
+}
+.nine > .ipad_section_wrap > .our_team_ipad_wrapper > #member_info.jill {
+  opacity: 1;
+  background-image: url("../images/ipad-info-jill.png");
+}
+
+.nine > .ipad_section_wrap > .our_team_ipad_wrapper > #member_info.linda {
+  opacity: 1;
+  background-image: url("../images/ipad-info-linda.png");
+}
+
+.nine > .ipad_section_wrap > .our_team_ipad_wrapper > #member_info.joanna {
+  opacity: 1;
+  background-image: url("../images/ipad-info-joanna.png");
+}
+
+.nine > .ipad_section_wrap > .our_team_ipad_wrapper > #member_info.peter {
+  opacity: 1;
+  background-image: url("../images/ipad-info-peter.png");
+}
+
+.our_team_copy_what_we_bring {
+	background-image: url("../images/copy-what-we-bring.png");
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	margin-top: 270px;
+	margin-left: 390px;
+	width: 436px;
+	height: 721px;
+}
+
+.our_team_donuts {
+	background-image: url("../images/donuts.png");
+	position: absolute;
+	width: 328px;
+	height: 114px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	margin-top: 865px;
+	margin-left: -60px;
+}
+
+.our_team_photos {
+	background-image: url("../images/our-team-photos.png");
+	position: absolute;
+	width: 1009px;
+	height: 516px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	margin-top: 1010px;
+	margin-left: 100px;
+}
+
+.our_team_footer_wrapper {
+  width: 1200px;
+	height: 536px;
+	background-image: url("../images/bottom-hills.png");
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	top: 1042px;
+	padding-bottom: 1px;
+  	z-index: -7;
+}
+
+/* Page Loader */
+.page_loader_con {
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: #FFFFFF;
+	z-index: 200000000;
+	-webkit-transition: opacity 600ms ease-out;
+	-moz-transition: 	opacity 600ms ease-out;
+	-ms-transition: 	opacity 600ms ease-out;
+	-o-transition: 		opacity 600ms ease-out;
+	transition: 		opacity 600ms ease-out;
+}
+.page_loader_con.fade {
+	opacity: 0; 
+}
+.page_loader_con.hide {
+	display: none; 
+}
+.page_loader_con .loader {
+	border: 16px solid #000000;
+	border-radius: 50%;
+	border-top: 16px solid #9e1b1b;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: 	spin 2s linear infinite;
+	animation: 			spin 2s linear infinite;
+	position: absolute;
+	top: calc(50% - 60px);
+	left: calc(50% - 60px); 
+}
+.page_loader_con .loader_icon {
+	position: absolute;
+	color: #9e1b1b;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: 	translate(-50%, -50%);
+	-ms-transform: 		translate(-50%, -50%);
+	transform: 			translate(-50%, -50%); 
+}
+.frame.nine .dots,
+.frame.yammer .dots{
+	right: -50px;
+}
+.dots {
+	position: absolute;
+	right: 4%;
+	top: 6%;
+	width: 1%;
+	z-index: 99;
+	
+}
+.dot {
+	float: left;
+	cursor: pointer;
+	width:100%;
+	margin-bottom: 35%;
+	padding-bottom: 100%;
+	border:1px solid #e8e8e8;
+	background-color: #FFFFFF;
+
+	border-radius: 50%;
+	-webkit-transition: all 600ms ease-out;
+	-moz-transition: 	all 600ms ease-out;
+	-ms-transition: 	all 600ms ease-out;
+	-o-transition: 		all 600ms ease-out;
+	transition: 		all 600ms ease-out;
+
+	
+}
+.dot:hover,
+.dot.active{
+	background:#666666;
+}
+.arrow {
+	position:absolute;
+	z-index:999;
+	bottom: 1.5%;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity:0.6;
+	overflow: hidden;
+	-webkit-transition: all 600ms ease-out;
+	-moz-transition: 	all 600ms ease-out;
+	-ms-transition: 	all 600ms ease-out;
+	-o-transition: 		all 600ms ease-out;
+	transition: 		all 600ms ease-out;
+	        text-align: center;
+}
+.arrow img{
+	position: relative;
+	opacity: 1;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+	width: 15%;
+}
+.arrow:hover {
+	opacity:1;
+}
+.yammer > .frame > .arrow,
+.nine> .frame > .arrow,
+.eight > .frame.eight.a > .arrow{
+	bottom: -12.5%
+}
+
+#ratio_16_9{
+   		width: 100vw; 
+   		height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
+   		max-height: 100vh;
+   		max-width: 177.78vh; /* 16/9 = 1.778 */
+   		margin: auto;
+   		position: absolute;
+   		top:0;bottom:0; /* vertical center */
+   		left:0;right:0; /* horizontal center */
+   		overflow: hidden;
+}
+
+#ratio_16_9 .tree.four{
+	  background: url(../images/tree_leaves_two.png) no-repeat 13% 43%/194% , 
+	  			url(../images/midnight.png) no-repeat  112% -18%/25%, 
+	  			url(../images/leaves.png) no-repeat 0% 277%/100%,  
+	  			url(../images/cliff.png) no-repeat -100% 32%/50% ;
+}
+@media screen and (min-width: 1900px) and (device-aspect-ratio: 16/9) {
+	#ratio_16_9 .tree.four{
+		background: url(../images/tree_leaves_two.png) no-repeat -3% 43%/160%,
+					url(../images/midnight.png) no-repeat  102% 8%/15%, 
+					url(../images/leaves.png) no-repeat 0% 277%/100%,  
+					url(../images/cliff.png) no-repeat -100% 32%/50% ;
+				}
+}
+#ratio_16_9 .tree.six{
+	background: url(../images/tree_leaves_two.png) no-repeat 104% 41%/210%,
+				url(../images/midnight.png) no-repeat 4% -17%/15%,
+				url(../images/leaves.png) no-repeat 0% 188%/100%,  
+				url(../images/cliff.png) no-repeat -6% 36%/50%;
+}
+@media screen and (min-width: 1900px) and (device-aspect-ratio: 16/9) {
+	#ratio_16_9 .tree.six{
+		background: url(../images/tree_leaves_two.png) no-repeat 127% 41%/160%,
+					url(../images/midnight.png) no-repeat 15% 7%/12%,
+					url(../images/leaves.png) no-repeat 0% 188%/100%,
+					url(../images/cliff.png) no-repeat -6% 36%/50% ;
+	}
+}
+#ratio_16_9 .tree.seven{
+	background: url(../images/tree_leaves_two.png) no-repeat 114% 41%/210%, 
+				url(../images/midnight.png) no-repeat -10% 64%/15%,
+				url(../images/leaves.png) no-repeat 0% 277%/100%,  
+				url(../images/cliff.png) no-repeat -100% 32%/50% ;
+}
+@media screen and (min-width: 1900px) and (device-aspect-ratio: 16/9) {
+	#ratio_16_9 .tree.seven{
+		background: url(../images/tree_leaves_two.png) no-repeat 130% 41%/160%, 
+					url(../images/midnight.png) no-repeat 13% 39%/12%, 
+					url(../images/leaves.png) no-repeat 0% 277%/100%,  
+					url(../images/cliff.png) no-repeat -100% 32%/50% ;
+	}
+}
+#ratio_16_9 .tree.eight{
+	background: url(../images/tree_leaves_two.png) no-repeat 104% 24.5%/180%,
+				url(../images/midnight.png) no-repeat 10% 500%/21%,  
+				url(../images/leaves.png) no-repeat 0% 277%/100%,  
+				url(../images/cliff.png) no-repeat -100% 32%/50% ;
+}
+@media screen and (min-width: 1910px) and (device-aspect-ratio: 16/9) {
+	#ratio_16_9 .tree.eight{
+		background: url(../images/tree_leaves_two.png) no-repeat 117% 24.5%/160%, 
+					url(../images/midnight.png) no-repeat 10% 400%/21%, 
+					url(../images/leaves.png) no-repeat 0% 277%/100%,  
+					url(../images/cliff.png) no-repeat -100% 32%/50% ;
+	}
+}
+#ratio_16_9 .tree.nine{
+		background: url(../images/tree_leaves_two.png) no-repeat 99% 2.5%/182%, 
+					url(../images/midnight.png) no-repeat  -100% 400%/21%, 
+					url(../images/leaves.png) no-repeat 0% 277%/100%,  
+					url(../images/cliff.png) no-repeat -100% 32%/50% ;
+					-webkit-transition: all 0ms 500ms linear;
+	   				-moz-transition: 	all 0ms 500ms linear;
+	   				-ms-transition: 	all 0ms 500ms linear;
+	   				-o-transition: 		all 0ms 500ms linear;
+	   				transition: 		all 0ms 500ms linear;
+}
+@media screen and (min-width: 1900px) and (device-aspect-ratio: 16/9) {
+	#ratio_16_9 .tree.nine{
+		background: url(../images/tree_leaves_two.png) no-repeat 115% 2.5%/160%, 
+					url(../images/midnight.png) no-repeat  -100% 400%/21%, 
+					url(../images/leaves.png) no-repeat 0% 277%/100%,  
+					url(../images/cliff.png) no-repeat -100% 32%/50% ;
+	}
+}
+#ratio_16_9 .tree.yammer{
+	opacity: 1;
+	background: url(../images/tree_leaves_two.png) no-repeat 99% -23.5%/182%, 
+				url(../images/midnight.png) no-repeat  -100% 400%/21%, 
+				url(../images/leaves.png) no-repeat 0% 277%/100%,  
+				url(../images/cliff.png) no-repeat -100% 32%/50% ;
+}
+#ratio_16_9 .roots_con{
+	top: 19%;
+}
+#ratio_16_9 .eight > .text_1{
+	top: 38%;
+	left: 0;
+	width: 28%;
+}
+#ratio_16_9 .eight > .owl_1{
+	top: 28%;
+	right: 32%;
+	width: 39%;
+}
+@media screen and (min-width: 2200px){
+	#ratio_16_9 .eight > .owl_1{
+		top: 23%;
+		right: 32%;
+	}
+}
+
+
+#ratio_4_3{
+ 	width: 125vh; 
+	height: 100vh; /* height:width ratio = 9/16 = .5625  */
+	max-height: 100vh;
+    max-width: 125vh; /* 16/9 = 1.778 */
+    margin: auto;
+    position: absolute;
+    top:0;bottom:0; /* vertical center */
+    left:0;right:0;
+}
+
+#ratio_4_3 .tree.four{
+	background: url(../images/tree_leaves_two.png) no-repeat 17% 43%/217%,
+				url(../images/midnight.png) no-repeat  143% 46%/33%,  
+				url(../images/leaves.png) no-repeat 0% 277%/100%,  
+				url(../images/cliff.png) no-repeat -100% 32%/50% ;
+}
+#ratio_4_3 .tree.six{
+	background: url(../images/tree_leaves_two.png) no-repeat 85% 41%/289%,
+				url(../images/midnight.png) no-repeat 2% -10%/21%,
+				url(../images/leaves.png) no-repeat 0% 138%/100%,  
+				url(../images/cliff.png) no-repeat -6% 51%/50%;
+}
+#ratio_4_3 .tree.seven{
+	background: url(../images/tree_leaves_two.png) no-repeat 91% 43%/289%,
+				url(../images/midnight.png) no-repeat -13% 20%/21%, 
+				url(../images/leaves.png) no-repeat 0% 277%/100%,  
+				url(../images/cliff.png) no-repeat -100% 32%/50% ;
+}
+#ratio_4_3 .tree.eight{
+	background: url(../images/tree_leaves_two.png) no-repeat 87% 24.5%/229%,
+				url(../images/midnight.png) no-repeat 12% 300%/21%,  
+				url(../images/leaves.png) no-repeat 0% 277%/100%,  
+				url(../images/cliff.png) no-repeat -100% 32%/50% ;
+}
+#ratio_4_3 .tree.nine{
+	background: url(../images/tree_leaves_two.png) no-repeat 74% 2.5%/260%, 
+				url(../images/midnight.png) no-repeat  -100% 400%/21%, 
+				url(../images/leaves.png) no-repeat 0% 277%/100%,  
+				url(../images/cliff.png) no-repeat -100% 32%/50% ;
+				-webkit-transition: all 0ms 500ms linear;
+				-moz-transition: 	all 0ms 500ms linear;
+				-ms-transition: 	all 0ms 500ms linear;
+				-o-transition: 		all 0ms 500ms linear;
+				transition: 		all 0ms 500ms linear;
+}
+#ratio_4_3 .tree.yammer{
+	opacity: 1;
+	background: url(../images/tree_leaves_two.png) no-repeat 99% -23.5%/182%, 
+				url(../images/midnight.png) no-repeat  -100% 400%/21%, 
+				url(../images/leaves.png) no-repeat 0% 277%/100%,  
+				url(../images/cliff.png) no-repeat -100% 32%/50% ;
+}
+#ratio_4_3 .roots_con{
+	top: 43%;
+}
+#ratio_4_3 .eight > .text_1{
+	top: 38%;
+	left: 0;
+	width: 38%;
+}
+#ratio_4_3 .eight > .owl_1{
+	top: 39%;
+	right: 22%;
+	width: 39%;
+}
+#ratio_4_3 .nine > img.text_2 {
+    position: absolute;
+    bottom: 13%;
+	left: 1%;
+	width: 30%;
+}
+#ratio_4_3 .frame.seven.b .seven > img.owl_flyin{
+	bottom: 26%;
+}
