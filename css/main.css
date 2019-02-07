@@ -191,7 +191,7 @@ body{
 .hill.zero{
 	opacity: 1;
 	background-position-x:0%;
-	top:-0%;
+	top:10%;
 	-webkit-transition: all  1000ms .6s ease-out;
 	-moz-transition: 	all  1000ms .6s ease-out;
 	-ms-transition: 	all  1000ms .6s ease-out;
@@ -200,53 +200,47 @@ body{
 }
 .hill.one{
 	background-position-x:80%;
-	top: -0%;
+	top: 10%;
 	-webkit-transition: all  1000ms ease-out;
 	-moz-transition: 	all  1000ms ease-out;
 	-ms-transition: 	all  1000ms ease-out;
 	-o-transition: 		all  1000ms ease-out;
 	transition: 		all  1000ms ease-out;
 }
-.hill.two{
-	top: 33%;
-}
-.hill.three{
-	top: 50%;
-}
-.hill.four{
-	top: 60%; 
-	left: 0%;
-}
+.hill.two{			top: 33%;}
+.hill.three{		top: 50%;}
+.hill.four{			top: 60%; left: 0%;}
 .hill.seven,
-.hill.six{
-	top: 60%;
-	background-position-x: 0%;
-}
-.hill.eight{
-	top: 65%;
-}
+.hill.six{			top: 60%; background-position-x: 0%;}
+.hill.eight{		top: 65%;}
 .hill.nine_jump,
-.hill.nine{
-	top: 70%;
-}
-.hill.yammer{
-	opacity: 0;
-}
-.yammer{
-	opacity: 0;
-}
+.hill.nine{			top: 70%;}
+.hill.yammer{		opacity: 0;}
+.yammer{			opacity: 0; }
 
 .tree.yammer #embedded-feed{
 	z-index: 99;
 	position: absolute;
-    height: 82%;
+    height: 70%;
     width: 100%;
-    top: 58%;
+    top: 64%;
     left: 50%;
 	transform: translate(-50%, -50%);
 }
-#document .yj-btn{
-	background-color: #ff0000;
+.tree.yammer .banner{
+	z-index: 99;
+	position: absolute;
+    width: 100%;
+    top: 22%;
+    left: 50%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #4472c4;
+	transform: translate(-50%, -50%);
+	font: 400 0.9vw/4 Helvetica;
+}
+.tree.yammer .banner span{
+	font: 500 1.8vw/2.5 Helvetica; 
 }
 .tree.yammer .yammer{
 	opacity: 1;
@@ -288,27 +282,7 @@ body{
 	-o-transition:      all 0625ms ease-out;
 	 transition:        all 0625ms ease-out;
  }
- .element {
-  animation-name: stretch;
-  animation-duration: 1.5s; 
-  animation-timing-function: ease-out; 
-  animation-delay: 0s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-fill-mode: none;
-  animation-play-state: running; 
-}
-.element {
-  animation: 
-    stretch
-    1.5s
-    ease-out
-    0s
-    alternate
-    infinite
-    none
-    running;
-}
+
  .nine > .frame > .frame_transition{
   	-webkit-animation: fadeIn ease-in 1s forwards ;
   	-moz-animation:    fadeIn ease-in 1s forwards ;
@@ -382,12 +356,9 @@ body{
 	-o-transition: 		left 1000ms ease;
 	transition: 		left 1000ms ease;
 }
-.hill.six > .cliff{
-	left: 0%;
-}
-.hill.seven > .cliff{
-	left: -47%;;
-}
+.hill.six > .cliff{ left: 0%;}
+.hill.seven > .cliff{ left: -47%;}
+
 .leaves{
 	position: absolute;
 	width: 102%;
@@ -404,12 +375,8 @@ body{
 	-o-transition: 		top 1000ms ease;
 	transition: 		top 1000ms ease;
 }
-.hill.six > .leaves{
-	top: 12%;
-}
-.hill.seven > .leaves{
-	top: 106%;
-}
+.hill.six > .leaves{ 	top: 12%;	}
+.hill.seven > .leaves{ 	top: 106%;	}
 .frame img{
 	position: absolute;
 	opacity: 0;
@@ -419,41 +386,40 @@ body{
 	-o-transition: 		opacity 200ms linear;
 	transition: 		opacity 200ms linear;
 }
-.frame.zero.a > .zero > img.text_1,
-.frame.zero.a > .zero > img.owl_1,
-.frame.one.a > .one > img.text_1,
-.frame.one.a > .one > img.text_2,
-.frame.one.a > .zero > img.owl_1,
-.frame.one.a > .one > .roots_con,
-.frame.one.a > .one > .roots_con > img.root.blue, .frame.one.a > .one > .roots_con > img.root.yellow, .frame.one.a > .one > .roots_con > img.root.green, .frame.one.a > .one > .roots_con > img.root.purple, .frame.two.a > .zero > img.owl_1,
-.frame.two.a > .two > img.text_1,
-.frame.two.a > .two > img.text_2,
-.frame.three.a > .three > img.text_1,
-.frame.three.b > .three > img.text_2,
-.frame.four.a > .zero > img.owl_1,
-.frame.four.a > .four > img,
-.frame.six.a > .six > img.text_1,
-.frame.six.a > .six > img.text_2, .frame.six.b > .six > img.text_3, .frame.six.c > .six > img.text_3, .frame.six.d > .six > img.text_3, .frame.six.e > .six > img.text_3, .frame.six.f > .six > img.text_3, .frame.six.g > .six > img.text_3,
-.frame.six.b > .six > .text_con,
-.frame.six.b > .six > .text_con > img.text_4,
-.frame.six.b > .six > .text_con .check.one, .frame.six.b > .six > .text_con .check.two, .frame.six.b > .six > .text_con .check.thr, .frame.six.b > .six > .text_con .check.for, .frame.six.b > .six > .text_con .check.fve,
-.frame.seven.a > .seven > img.text_1,
-.frame.seven.b > .seven > img.script,
-.frame.eight.a > .eight > .owl_eight_con,
-.frame.eight.a > .eight > .owl_eight_con img,
-.frame.eight.a > .eight > img,
-.frame.nine.a > .nine > img.text_2,
-.frame.nine.a > .nine > .ipad_section_wrap,
-.frame.nine.a > .nine > .ipad_section_wrap img,
-.frame.nine.a > .nine > .ipad_section_wrap > .our_team_ipad_wrapper,
-.frame.nine.a > .nine > .ipad_section_wrap > .our_team_ipad_wrapper > .our_team_ipad_team,
-.frame.nine.a > .nine > .ipad_section_wrap > .our_team_ipad_wrapper > .our_team_ipad_buttons,
-.frame.nine.a > .nine > .ipad_section_wrap > .our_team_ipad_wrapper > .our_team_ipad_buttons  .our_team_button,
-.frame.nine.a > .nine > .ipad_section_wrap > .our_team_ipad_wrapper > .our_team_ipad_info,
-.frame.nine.a > .nine > .ipad_section_wrap > .our_team_ipad_wrapper > .member_info_jill,
-.frame.nine.a > .nine > .ipad_section_wrap > .our_team_ipad_wrapper > .member_info_linda ,
-.frame.nine.a > .nine > .ipad_section_wrap > .our_team_ipad_wrapper > .member_info_joanna,
-.frame.nine.a > .nine > .ipad_section_wrap > .our_team_ipad_wrapper > .member_info_peter{
+.frame.zero   		> .zero  > img.owl_1,
+.frame.zero.a 		> .zero  > .thought_bub,
+.frame.zero.a 		> .zero  > .thought_bub > img,
+.frame.zero.b 		> .zero  > img.text_1,
+.frame.one.a 		> .zero  > img.owl_1,
+.frame.one.a 		> .one   > .text_1,
+.frame.one.a 		> .one 	 > .text_1 > img.static,
+.frame.one.a 		> .one   > img,
+.frame.one.a 		> .one   > .roots_con,
+.frame.one.a 		> .one   > .roots_con > img.root,
+.frame.two.a 		> .zero  > img.owl_1,
+.frame.two.a 		> .two   > img,
+.frame.three.a 		> .three > img.text_1,
+.frame.three.b 		> .three > img.text_2,
+.frame.four.a 		> .zero  > img.owl_1,
+.frame.four.a 		> .four  > img,
+.frame.six.a 		> .six	 > img.text_1,
+.frame.six.a 		> .six	 > img.text_2, 
+.frame.six:not(.a) 	> .six	 > img.text_3, 
+.frame.six.b 		> .six	 > .text_con,
+.frame.six.b 		> .six	 > .text_con > img.text_4,
+.frame.six.b 		> .six	 > .text_con .check,
+.frame.seven.a 		> .seven > img.text_1,
+.frame.seven.b 		> .seven > img.script,
+.frame.eight.a 		> .eight > .owl_eight_con,
+.frame.eight.a 		> .eight > .owl_eight_con img,
+.frame.eight.a 		> .eight > img,
+.frame.nine.a 		> .nine  > img.text_2,
+.frame.nine.a 		> .nine  > .ipad_section_wrap,
+.frame.nine.a 		> .nine  > .ipad_section_wrap img,
+.frame.nine.a 		> .nine  > .ipad_section_wrap > .our_team_ipad_wrapper,
+.frame.nine.a 		> .nine  > .ipad_section_wrap > .our_team_ipad_wrapper > [class*=our_team_ipad],
+.frame.nine.a 		> .nine  > .ipad_section_wrap > .our_team_ipad_wrapper > .our_team_ipad_buttons  .our_team_button,
+.frame.nine.a 		> .nine  > .ipad_section_wrap > .our_team_ipad_wrapper > [class*="member_info"]{
 	opacity: 1;
 	-webkit-transition: opacity 600ms ease-in;
 	-moz-transition: 	opacity 600ms ease-in;
@@ -479,33 +445,19 @@ body{
 	-o-transition: 		bottom 1500ms ease, left 1500ms ease, width 1500ms ease,opacity 500ms ease ;
 	transition: 		bottom 1500ms ease, left 1500ms ease, width 1500ms ease,opacity 500ms ease ;     		
 }
-.tree.two >   .frame> .owl,
-.tree.three > .frame > .owl,
-.tree.four >  .frame > .owl,
-.tree.six >   .frame > .owl{
+.tree.two 	>   .frame > .owl,
+.tree.three > 	.frame > .owl,
+.tree.four 	>  	.frame > .owl,
+.tree.six 	>   .frame > .owl{
 	opacity: 1;
 }
-.tree.two > .frame> .owl{
-	bottom: -6.5%;
-	left: -13%;
-	width: 63%;
-}
-.tree.three >  .frame > .owl{
-	width: 35%;
-	left: 53%; 
-	bottom: 28%;
-}
-.tree.four > .frame > .owl{
-	bottom: -3%;
-	left: -19%;
-	width: 85%;
-}
-.tree.six > .frame > .owl{
-	left: -100%;
-	bottom: 100%;
-}
-.tree.nine > .frame > .owl,
-.tree.yammer > .frame >  .owl{
+.tree.two > 	.frame > .owl{	width: 63%;	left: -13%;	bottom: -6.5%;	}
+.tree.three >  	.frame > .owl{	width: 35%;	left: 53%; 	bottom: 28%;	}
+.tree.four > 	.frame > .owl{	width: 85%;	left: -19%;	bottom: -3%;	}
+.tree.six > 	.frame > .owl{				left: -100%;bottom: 100%;	}
+
+.tree.nine > 	.frame > .owl,
+.tree.yammer > 	.frame >  .owl{
 	opacity: 0;
 }
 	
@@ -531,25 +483,83 @@ body{
 	-o-transition: 		bottom 1000ms ease, left 1000ms ease, width 1000ms ease,opacity 500ms ease ;
 	transition: 		bottom 1000ms ease, left 1000ms ease, width 1000ms ease,opacity 500ms ease ;
 }
-.frame.four.a > .owl{
-	bottom: 14%;
-	left: -7%;
-	width: 62%;
-	background: url(../images/owl/hover_swater.gif) no-repeat 0%/100%;
-}
-.frame.six.a > .owl{
-	bottom: 34%;
-	left: -11%;
-	width: 43%;
-	background: url(../images/owl/hover_swater.gif) no-repeat 0%/100%;
-}
-.frame.two.a > .owl,
-.frame.six.a > .owl,
+
+.frame.four.a > .owl{ bottom: 14%; left: -7%;  width: 62%;background: url(../images/owl/hover_swater.gif) no-repeat 0%/100%;}
+.frame.six.a  > .owl{ bottom: 34%; left: -11%; width: 43%;background: url(../images/owl/hover_swater.gif) no-repeat 0%/100%;}
+
+.frame.two.a  > .owl,
+.frame.six.a  > .owl,
 .frame.four.a > .owl,
-.frame.six.c > .owl,
-.frame.six.b > .owl{
+.frame.six.c  > .owl,
+.frame.six.b  > .owl{
 	opacity: 0;
 }
+.zero > .thought_bub{
+	position: absolute;
+    top: 31%;
+    left: 53%;
+    width: 41%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 38%;
+}
+.zero > .thought_bub > img.big,
+.zero > .thought_bub > img.medium,
+.zero > .thought_bub > img.small,
+.zero > .thought_bub > img.xtrasmall{
+	opacity: 1;
+	width: 0%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	-webkit-transition-timing-function: cubic-bezier(0.000, 0, 0.385, 1)!important; 
+	-webkit-transition-timing-function: cubic-bezier(0.000, -0.040, 0.385, 1.400)!important; 
+	-moz-transition-timing-function: 	cubic-bezier(0.000, -0.040, 0.385, 1.400)!important; 
+	-o-transition-timing-function: 		cubic-bezier(0.000, -0.040, 0.385, 1.400)!important; 
+	 transition-timing-function: 		cubic-bezier(0.000, -0.040, 0.385, 1.400)!important; 
+}
+.zero > .thought_bub > img.big{			top: 50%; left: 50%;}
+.zero > .thought_bub > img.medium{		top: 80%; left: 80%;}
+.zero > .thought_bub > img.small{		top: 88%; left: 86%	}
+.zero > .thought_bub > img.xtrasmall{	top: 93%; left: 92%	}
+
+
+.frame.zero.a > .zero > .thought_bub > img.big{			width: 100%;} 
+.frame.zero.a > .zero > .thought_bub > img.medium{		width: 10%;	} 
+.frame.zero.a > .zero > .thought_bub > img.small{		width: 6%;	} 
+.frame.zero.a > .zero > .thought_bub > img.xtrasmall{	width: 3%;	}
+
+.frame.zero.a > .zero > .thought_bub > img.xtrasmall,
+.frame.zero.b > .zero > .thought_bub > img.big{			
+	-webkit-transition: width 500ms 100ms;
+	-moz-transition: 	width 500ms 100ms;
+	-ms-transition: 	width 500ms 100ms;
+	-o-transition: 		width 500ms 100ms;
+	transition: 		width 500ms 100ms;
+}
+.frame.zero.a > .zero > .thought_bub > img.small,
+.frame.zero.b > .zero > .thought_bub > img.medium{		
+	-webkit-transition: width 500ms 200ms ;
+	-moz-transition: 	width 500ms 200ms ;
+	-ms-transition: 	width 500ms 200ms ;
+	-o-transition: 		width 500ms 200ms ;
+	transition: 		width 500ms 200ms ;
+}
+.frame.zero.a > .zero > .thought_bub > img.medium,
+.frame.zero.b > .zero > .thought_bub > img.small{		
+	-webkit-transition: width 500ms 300ms;
+	-moz-transition: 	width 500ms 300ms;
+	-ms-transition: 	width 500ms 300ms;
+	-o-transition: 		width 500ms 300ms;
+	transition: 		width 500ms 300ms;
+}
+.frame.zero.a > .zero > .thought_bub > img.big,
+.frame.zero.b > .zero > .thought_bub > img.xtrasmall{	
+	-webkit-transition: width 500ms 300ms;
+	-moz-transition: 	width 500ms 300ms;
+	-ms-transition: 	width 500ms 300ms;
+	-o-transition: 		width 500ms 300ms;
+	transition: 		width 500ms 300ms;
+}
+
 .zero > img.owl_1{
 	top: 75%;
 	left: 150%; 
@@ -557,14 +567,10 @@ body{
 	z-index: 9;
 	width: 67%;
 }
-.frame.zero.a .zero > img.owl_1{
+.frame.zero .zero > img.owl_1{
 	left: 79%;
 }
-.frame.one.c .zero > img.owl_1,
-.frame.one.d .zero > img.owl_1,
-.frame.one.e .zero > img.owl_1,
-.frame.one.a .zero img.owl_1,
-.frame.one.a .zero img.owl_1{
+.frame.one .zero > img.owl_1{
 	left: 19%;
 }
 .frame.two.a .zero img.owl_1{
@@ -585,10 +591,66 @@ body{
 	transform: translate(-50%, -50%);
 	width: 32%;
 }
-.one > img.text_1{
+.one > .text_1{
+	position: absolute;
 	top: 10%;
 	left: 12%;
-	width: 26%;
+	width: 30%;
+	height: 146px;	
+}
+.frame.one.a > .one > .text_1{
+	z-index: 999;
+}
+.one > .text_1 > .after img:not(.one){
+	margin-top: -80px;
+}
+.frame.one.a > .one > img.text_2{
+	-webkit-transition: opacity 400ms 6s ease;
+	-moz-transition: 	opacity 400ms 6s ease;
+	-ms-transition: 	opacity 400ms 6s ease;
+	-o-transition: 		opacity 400ms 6s ease;
+	transition: 		opacity 400ms 6s ease;	
+}
+.one > img.text_1 img:not(.static){
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+.frame.one.a > .one > .text_1 > img.one{
+	-webkit-animation: cycle ease-in-out 2s 1s forwards ;
+	-moz-animation:    cycle ease-in-out 2s 1s forwards ;
+	-o-animation:      cycle ease-in-out 2s 1s forwards ;
+	animation:         cycle ease-in-out 2s 1s forwards ;
+}
+.frame.one.a > .one > .text_1 > img.two{
+	-webkit-animation: cycle ease-in-out 2s 2s forwards ;
+	-moz-animation:    cycle ease-in-out 2s 2s forwards ;
+	-o-animation:      cycle ease-in-out 2s 2s forwards ;
+	animation:         cycle ease-in-out 2s 2s forwards ;	
+}
+.frame.one.a > .one > .text_1 > img.three{
+	-webkit-animation: cycle ease-in-out 2s 3s forwards ;
+	-moz-animation:    cycle ease-in-out 2s 3s forwards ;
+	-o-animation:      cycle ease-in-out 2s 3s forwards ;
+	animation:         cycle ease-in-out 2s 3s forwards ;	
+}
+.frame.one.a > .one > .text_1 > img.four{
+	-webkit-animation: cycle ease-in-out 2s 4s forwards ;
+	-moz-animation:    cycle ease-in-out 2s 4s forwards ;
+	-o-animation:      cycle ease-in-out 2s 4s forwards ;
+	animation:         cycle ease-in-out 2s 4s forwards ;	
+}
+@keyframes cycle {
+    100%, 0% {
+     	opacity: 0;
+    }
+    75%{
+    	opacity: 0;
+    }
+    25%, 40% {
+    	opacity: 1;
+    } 
 }
 img.root{
 	left: 0;
@@ -598,33 +660,33 @@ img.root{
 }
 
 .frame.one.a > .one > .roots_con > img.root.blue{
-	-webkit-transition: opacity 600ms 1.2s ease-in;
-	-moz-transition: 	opacity 600ms 1.2s ease-in;
-	-ms-transition: 	opacity 600ms 1.2s ease-in;
-	-o-transition: 		opacity 600ms 1.2s ease-in;
-	transition: 		opacity 600ms 1.2s ease-in;
+	-webkit-transition: opacity 1s 1s ease-in;
+	-moz-transition: 	opacity 1s 1s ease-in;
+	-ms-transition: 	opacity 1s 1s ease-in;
+	-o-transition: 		opacity 1s 1s ease-in;
+	transition: 		opacity 1s 1s ease-in;
 }
 .frame.one.a > .one > .roots_con > img.root.yellow{
-	-webkit-transition: opacity 600ms 1.8s ease-in;
-	-moz-transition: 	opacity 600ms 1.8s ease-in;
-	-ms-transition: 	opacity 600ms 1.8s ease-in;
-	-o-transition: 		opacity 600ms 1.8s ease-in;
-	transition: 		opacity 600ms 1.8s ease-in;
+	-webkit-transition: opacity 1s 2s ease-in;
+	-moz-transition: 	opacity 1s 2s ease-in;
+	-ms-transition: 	opacity 1s 2s ease-in;
+	-o-transition: 		opacity 1s 2s ease-in;
+	transition: 		opacity 1s 2s ease-in;
 }
 .frame.one.a > .one > .roots_con > img.root.green{
-	-webkit-transition: opacity 600ms 2.4s ease-in;
-	-moz-transition: 	opacity 600ms 2.4s ease-in;
-	-ms-transition: 	opacity 600ms 2.4s ease-in;
-	-o-transition: 		opacity 600ms 2.4s ease-in;
-	transition: 		opacity 600ms 2.4s ease-in;
+	-webkit-transition: opacity 1s 3s ease-in;
+	-moz-transition: 	opacity 1s 3s ease-in;
+	-ms-transition: 	opacity 1s 3s ease-in;
+	-o-transition: 		opacity 1s 3s ease-in;
+	transition: 		opacity 1s 3s ease-in;
 }
 .frame.one.a > .one > .roots_con > img.root.purple{
 	position: relative;
-	-webkit-transition: opacity 600ms 3s ease-in;
-	-moz-transition: 	opacity 600ms 3s ease-in;
-	-ms-transition: 	opacity 600ms 3s ease-in;
-	-o-transition: 		opacity 600ms 3s ease-in;
-	transition: 		opacity 600ms 3s ease-in;
+	-webkit-transition: opacity 1s 4s ease-in;
+	-moz-transition: 	opacity 1s 4s ease-in;
+	-ms-transition: 	opacity 1s 4s ease-in;
+	-o-transition: 		opacity 1s 4s ease-in;
+	transition: 		opacity 1s 4s ease-in;
 }
 
 .roots_con{
@@ -640,6 +702,13 @@ img.root{
 	bottom: 1%;
 	right: 5%;
 	width: 29%;
+}
+.frame.two.a > .two   > img.text_2{
+	-webkit-transition: opacity 600ms 1.5s ease-in;
+	-moz-transition: 	opacity 600ms 1.5s ease-in;
+	-ms-transition: 	opacity 600ms 1.5s ease-in;
+	-o-transition: 		opacity 600ms 1.5s ease-in;
+	transition: 		opacity 600ms 1.5s ease-in;	
 }
 .two > img.text_1{
 	top: 12%;
@@ -682,9 +751,16 @@ img.root{
 }
 .six > img.text_2,
 .six > img.text_3{
-	bottom: 12%;
+	bottom: 73%;
 	left: 0%;
 	width: 28%;
+}
+.frame.six.a > .six   > img.text_1{
+	-webkit-transition: opacity 600ms 1.5s ease-in;
+	-moz-transition: 	opacity 600ms 1.5s ease-in;
+	-ms-transition: 	opacity 600ms 1.5s ease-in;
+	-o-transition: 		opacity 600ms 1.5s ease-in;
+	transition: 		opacity 600ms 1.5s ease-in;	
 }
 .six > .text_con{
 	position: absolute;
@@ -702,45 +778,52 @@ img.root{
 	left: 4%;
 	width: 6%;
 }
-.frame.six.b > .six > .text_con > .check.one{
-	bottom: 89%;
-	-webkit-transition: opacity 600ms .5s ease-in;
-	-moz-transition: 	opacity 600ms .5s ease-in;
-	-ms-transition: 	opacity 600ms .5s ease-in;
-	-o-transition: 		opacity 600ms .5s ease-in;
-	transition: 		opacity 600ms .5s ease-in;
-}
-.frame.six.b > .six > .text_con > .check.two{
-	bottom: 70.2%;
+.frame.six.b > .six > .text_con img.text_4{
 	-webkit-transition: opacity 600ms 1.5s ease-in;
 	-moz-transition: 	opacity 600ms 1.5s ease-in;
 	-ms-transition: 	opacity 600ms 1.5s ease-in;
 	-o-transition: 		opacity 600ms 1.5s ease-in;
-	transition: 		opacity 600ms 1.5s ease-in;
+	transition: 		opacity 600ms 1.5s ease-in;	
+}
+.frame.six.b > .six > .text_con > .check.one{
+	bottom: 89%;
+	-webkit-transition: opacity 600ms 2s ease-in;
+	-moz-transition: 	opacity 600ms 2s ease-in;
+	-ms-transition: 	opacity 600ms 2s ease-in;
+	-o-transition: 		opacity 600ms 2s ease-in;
+	transition: 		opacity 600ms 2s ease-in;
+}
+.frame.six.b > .six > .text_con > .check.two{
+	bottom: 70.2%;
+	-webkit-transition: opacity 600ms 3s ease-in;
+	-moz-transition: 	opacity 600ms 3s ease-in;
+	-ms-transition: 	opacity 600ms 3s ease-in;
+	-o-transition: 		opacity 600ms 3s ease-in;
+	transition: 		opacity 600ms 3s ease-in;
 }
 .frame.six.b > .six > .text_con > .check.thr{
 	bottom: 45.5%;
-	-webkit-transition: opacity 600ms 2.5s ease-in;
-	-moz-transition: 	opacity 600ms 2.5s ease-in;
-	-ms-transition: 	opacity 600ms 2.5s ease-in;
-	-o-transition: 		opacity 600ms 2.5s ease-in;
-	transition: 		opacity 600ms 2.5s ease-in;
+	-webkit-transition: opacity 600ms 4s ease-in;
+	-moz-transition: 	opacity 600ms 4s ease-in;
+	-ms-transition: 	opacity 600ms 4s ease-in;
+	-o-transition: 		opacity 600ms 4s ease-in;
+	transition: 		opacity 600ms 4s ease-in;
 }
 .frame.six.b > .six > .text_con > .check.for{
 	bottom: 18.8%;
-	-webkit-transition: opacity 600ms 3.5s ease-in;
-	-moz-transition: 	opacity 600ms 3.5s ease-in;
-	-ms-transition: 	opacity 600ms 3.5s ease-in;
-	-o-transition: 		opacity 600ms 3.5s ease-in;
-	transition: 		opacity 600ms 3.5s ease-in;
+	-webkit-transition: opacity 600ms 5.5s ease-in;
+	-moz-transition: 	opacity 600ms 5.5s ease-in;
+	-ms-transition: 	opacity 600ms 5.5s ease-in;
+	-o-transition: 		opacity 600ms 5.5s ease-in;
+	transition: 		opacity 600ms 5.5s ease-in;
 }
 .frame.six.b > .six > .text_con >  .check.fve{
 	bottom: 8.5%;
-	-webkit-transition: opacity 600ms 4.5s ease-in;
-	-moz-transition: 	opacity 600ms 4.5s ease-in;
-	-ms-transition: 	opacity 600ms 4.5s ease-in;
-	-o-transition: 		opacity 600ms 4.5s ease-in;
-	transition: 		opacity 600ms 4.5s ease-in;
+	-webkit-transition: opacity 600ms 7s ease-in;
+	-moz-transition: 	opacity 600ms 7s ease-in;
+	-ms-transition: 	opacity 600ms 7s ease-in;
+	-o-transition: 		opacity 600ms 7s ease-in;
+	transition: 		opacity 600ms 7s ease-in;
 }
 .seven > img.text_1{
     width: 74%;
@@ -868,10 +951,10 @@ img.root{
 		width: 30%;
 	}
 }
-.frame.yammer > header,
-.frame.nine.a > header,
-.frame.eight.a > header,
-.frame.zero.a > header {
+.frame.yammer 	> header,
+.frame.nine.a 	> header,
+.frame.eight.a 	> header,
+.frame.zero.a 	> header {
 	top:0px;
 }
 header {
@@ -1002,42 +1085,10 @@ header {
   overflow: hidden;
 }
 .nine > .ipad_section_wrap > .our_team_ipad_wrapper > .our_team_ipad_buttons  .our_team_button:last-of-type{
-
-margin-right: 0%
+	margin-right: 0%
 }
 
-.jill {
-  background-image: url("../images/button-jill.png");
-  cursor: pointer;
-}
 
-.jill.on {
-  background-image: url("../images/button-jill-on.png");
-}
-
-.linda {
-  background-image: url("../images/button-linda.png");
-}
-
-.linda.on {
-  background-image: url("../images/button-linda-on.png");
-}
-
-.joanna {
-  background-image: url("../images/button-joanna.png");
-}
-
-.joanna.on {
-  background-image: url("../images/button-joanna-on.png");
-}
-
-.peter {
-  background-image: url("../images/button-peter.png");
-}
-
-.peter.on {
-  background-image: url("../images/button-peter-on.png");
-}
 
 .nine > .ipad_section_wrap > .our_team_ipad_wrapper > .our_team_ipad_info {
   	position: absolute;
@@ -1053,28 +1104,20 @@ margin-right: 0%
 	height: initial;
 
 }
-.nine > .ipad_section_wrap > .our_team_ipad_wrapper > #member_info{
-	opacity: 0;
-}
-.nine > .ipad_section_wrap > .our_team_ipad_wrapper > #member_info.jill {
-  opacity: 1;
-  background-image: url("../images/ipad-info-jill.png");
-}
 
-.nine > .ipad_section_wrap > .our_team_ipad_wrapper > #member_info.linda {
-  opacity: 1;
-  background-image: url("../images/ipad-info-linda.png");
-}
-
-.nine > .ipad_section_wrap > .our_team_ipad_wrapper > #member_info.joanna {
-  opacity: 1;
-  background-image: url("../images/ipad-info-joanna.png");
-}
-
-.nine > .ipad_section_wrap > .our_team_ipad_wrapper > #member_info.peter {
-  opacity: 1;
-  background-image: url("../images/ipad-info-peter.png");
-}
+.jill {			background-image: url("../images/button-jill.png");cursor: pointer;}
+.jill.on {		background-image: url("../images/button-jill-on.png");	}
+.linda {		background-image: url("../images/button-linda.png");	}
+.linda.on {		background-image: url("../images/button-linda-on.png");	}
+.joanna {		background-image: url("../images/button-joanna.png");	}
+.joanna.on {	background-image: url("../images/button-joanna-on.png");}
+.peter {		background-image: url("../images/button-peter.png");	}
+.peter.on {		background-image: url("../images/button-peter-on.png");	}
+.nine > .ipad_section_wrap > .our_team_ipad_wrapper > #member_info{			opacity: 0;}
+.nine > .ipad_section_wrap > .our_team_ipad_wrapper > #member_info.jill {	background-image: url("../images/ipad-info-jill.png");	opacity: 1;	}
+.nine > .ipad_section_wrap > .our_team_ipad_wrapper > #member_info.linda {	background-image: url("../images/ipad-info-linda.png");	opacity: 1;	}
+.nine > .ipad_section_wrap > .our_team_ipad_wrapper > #member_info.joanna {	background-image: url("../images/ipad-info-joanna.png");opacity: 1;	}
+.nine > .ipad_section_wrap > .our_team_ipad_wrapper > #member_info.peter {	background-image: url("../images/ipad-info-peter.png");	opacity: 1;	}
 
 .our_team_copy_what_we_bring {
 	background-image: url("../images/copy-what-we-bring.png");
@@ -1113,7 +1156,7 @@ margin-right: 0%
 }
 
 .our_team_footer_wrapper {
-  width: 1200px;
+  	width: 1200px;
 	height: 536px;
 	background-image: url("../images/bottom-hills.png");
 	background-repeat: no-repeat;
@@ -1249,9 +1292,9 @@ margin-right: 0%
 
 #ratio_16_9 .tree.four{
 	  background: url(../images/tree_leaves_two.png) no-repeat 13% 43%/194% , 
-	  			url(../images/midnight.png) no-repeat  112% -18%/25%, 
-	  			url(../images/leaves.png) no-repeat 0% 277%/100%,  
-	  			url(../images/cliff.png) no-repeat -100% 32%/50% ;
+	  			  url(../images/midnight.png) no-repeat  112% -18%/25%, 
+	  			  url(../images/leaves.png) no-repeat 0% 277%/100%,  
+	  			  url(../images/cliff.png) no-repeat -100% 32%/50% ;
 }
 @media screen and (min-width: 1900px) and (device-aspect-ratio: 16/9) {
 	#ratio_16_9 .tree.four{
@@ -1424,4 +1467,66 @@ margin-right: 0%
 }
 #ratio_4_3 .frame.seven.b .seven > img.owl_flyin{
 	bottom: 26%;
+}
+.mfp-bg {
+	display:none;
+}
+.mfp-wrap {
+  width: 27vw;
+  height: 56.25vw;
+  max-height: 100vh;
+  max-width: 177.78vh;
+  margin: auto;
+  position: absolute;
+  top: -5vh;
+  bottom: 0;
+  left: initial;
+  right: 0;
+  overflow: hidden;
+  right: 20.8vw;
+  /* top: 0; */
+  /* left: initial; */
+  /* width: 50%; */
+  /* height: 100%; */
+  z-index: 1043;
+  /* position: absolute; */
+  outline: none !important;
+  -webkit-backface-visibility: hidden;
+}
+.mfp-container {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+.mfp-iframe-holder .mfp-content {
+    line-height: 0;
+    width: 100%;
+    max-width: 600px;
+}
+.mfp-iframe-scaler iframe {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background: #000;
+    padding: 3.7vh .5vh;
+}
+.mfp-content {
+    position: relative;
+    right: 0;
+    bottom: -14%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    text-align: left;
+    z-index: 1045;
+    /* transform: translateX(-50%); */
 }

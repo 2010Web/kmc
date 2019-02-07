@@ -97,7 +97,7 @@
 				e.preventDefault();
    				e = e || window.event;
    				if (!button_disabler) {
-					if ((e.keyCode == '38' || e.keyCode == '39' || e.keyCode == 13) && 11 > (slide + 1)) {
+					if ((e.keyCode == '38' || e.keyCode == '39' || e.keyCode == 13) && 12 > (slide + 1)) {
 						button_disabler = true;
    						core(++slide);
    					}
@@ -112,18 +112,20 @@
 				subframe = '';
 				hill_state = '';
 				switch(slide) {
-					case 12: state = 'yammer '.concat(state);   subframe += 'yammer a ';
-					case 11: state = 'nine '.concat(state); 	subframe += 'nine a ';
-					case 10: state = 'eight '.concat(state); 	subframe += 'eight a ';
-					case  9:                  					subframe += 'seven b ';
-					case  8: state = 'seven '.concat(state); 	subframe += 'seven a ';
-					case  7:                   					subframe += 'six b ';  
-					case  6: state = 'six '.concat(state);   	subframe += 'six a ';  
-					case  5: state = 'four '.concat(state);  	subframe += 'four a '; 
-					case  4:                   					subframe += 'three b ';
-					case  3: state = 'three '.concat(state); 	subframe += 'three a ';
-					case  2: state = 'two '.concat(state);   	subframe += 'two a ';  
-					case  1: state = 'one '.concat(state);   	subframe += 'one a ';  
+
+					case 13: state = 'yammer '.concat(state);   subframe += 'yammer a ';
+					case 12: state = 'nine '.concat(state); 	subframe += 'nine a ';
+					case 11: state = 'eight '.concat(state); 	subframe += 'eight a ';
+					case 10:                  					subframe += 'seven b ';
+					case  9: state = 'seven '.concat(state); 	subframe += 'seven a ';
+					case  8:                   					subframe += 'six b ';  
+					case  7: state = 'six '.concat(state);   	subframe += 'six a ';  
+					case  6: state = 'four '.concat(state);  	subframe += 'four a '; 
+					case  5:                   					subframe += 'three b ';
+					case  4: state = 'three '.concat(state); 	subframe += 'three a ';
+					case  3: state = 'two '.concat(state);   	subframe += 'two a ';  
+					case  2: state = 'one '.concat(state);   	subframe += 'one a ';  
+					case  1: 									subframe += 'zero b ';
 					case  0: state = 'zero '.concat(state);  	subframe += 'zero a ';
     				default:
     				 hill_state = 'hill '.concat(state).trim();
@@ -223,13 +225,16 @@
 		container: "#embedded-feed",
 		network: "its.jnj.com",
 		feedType: "group",
-		feedId: "15055970"
+		feedId: "15055970",
+		config: {
+             header: "false"      // specify no header 
+        }
 	});
 
 	jQuery('#video').magnificPopup({
         type: 'iframe',
         items: {
-	     		src:'https://player.vimeo.com/video/296502253'
+	     		src:'https://player.vimeo.com/video/301213705'
      		},
     		iframe: {
     		    patterns: {
