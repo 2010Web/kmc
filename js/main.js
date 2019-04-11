@@ -12,80 +12,41 @@
 		function whichTransitionEvent(){
 		  var t,
 		      el = document.createElement("fakeelement");
-		
+
 		  var transitions = {
 		    "transition"      : "transitionend",
 		    "OTransition"     : "oTransitionEnd",
 		    "MozTransition"   : "transitionend",
 		    "WebkitTransition": "webkitTransitionEnd"
 		  }
-		
+
 		  for (t in transitions){
 		    if (el.style[t] !== undefined){
 		      return transitions[t];
 		    }
 		  }
 		}
-
-		jQuery(window).on("load resize",function(e){
-
-			var ratio = get_ratio(),
-				root_y = ratio - 37 + "%" ,
-				transitionEvent = whichTransitionEvent();
-
-			console.log(ratio);
-			$(".roots_con.responsive").css({'top': root_y});
-			// $(".roots_con").css({'top': root_y}).find('img').css({'width': roots_img});
-
-			var ImageMap = function (map) {
-            	var n,
-            	    areas = map.getElementsByTagName('area'),
-            	    len = areas.length,
-            	    coords = [],
-            	    previousWidth = 2000;
-            	for (n = 0; n < len; n++) {
-            	    coords[n] = areas[n].coords.split(',');
-            	}
-            	this.resize = function () {
-            	    var n, m, clen,
-            	        x = $('.owl_flyin').width() / previousWidth;
-            	    for (n = 0; n < len; n++) {
-            	        clen = coords[n].length;
-            	        for (m = 0; m < clen; m++) {
-            	            coords[n][m] *= x;
-            	        }
-            	        areas[n].coords = coords[n].join(',');
-            	    }
-            	    previousWidth = $('.owl_flyin').width();
-            	    return true;
-            	};
-            	window.onresize = this.resize;
-        	},
-        	imageMap = new ImageMap(document.getElementById('map'));
-    		imageMap.resize();
-    		window.scrollTo(0,1);
-		});
 		jQuery(document).ready(function() {
-			var slide = 0,
+			var slide = 1,
 				button_disabler = true,
-				last_slide = 0,
-				last_frame = '';
-				tree = $('.tree'),
-				hill = $('.hill'),
-				frame = tree.find('.frame'),
-				subframe = '',
-				yammer_page = false , 
+				last_slide      = 0,
+				last_frame      = '';
+				tree            = $('.tree'),
+				hill            = $('.hill'),
+				frame           = tree.find('.frame'),
+				subframe        = '',
+				yammer_page     = false ,
 				transitionEvent = whichTransitionEvent();
-				
+
 			function start() {
-				slide = 0;
+				slide      = 1;
 				last_slide = 0;
 				last_frame = '';
 				hill.attr('class','hill zero');
-				tree.attr('class','tree zero').one(transitionEvent,   
+				tree.attr('class','tree zero').one(transitionEvent,
   					function(e) {
   						console.log("Start");
-  						frame.attr('class','frame zero a')
+  						frame.attr('class','frame zero b')
   					  	button_disabler = false;
   					}
   				);
@@ -101,7 +62,7 @@
 						button_disabler = true;
    						core(++slide);
    					}
-   					else if ((e.keyCode == '40'|| e.keyCode == '37' || e.keyCode == 8) && 0 < (slide)) {
+   					else if ((e.keyCode == '40'|| e.keyCode == '37' || e.keyCode == 8) && 1 < (slide)) {
    						button_disabler = true;
 			   			core(--slide);
    					}
@@ -118,23 +79,24 @@
 					case 11: state = 'eight '.concat(state); 	subframe += 'eight a ';
 					case 10:                  					subframe += 'seven b ';
 					case  9: state = 'seven '.concat(state); 	subframe += 'seven a ';
-					case  8:                   					subframe += 'six b ';  
-					case  7: state = 'six '.concat(state);   	subframe += 'six a ';  
-					case  6: state = 'four '.concat(state);  	subframe += 'four a '; 
+					case  8:                   					subframe += 'six b ';
+					case  7: state = 'six '.concat(state);   	subframe += 'six a ';
+					case  6: state = 'four '.concat(state);  	subframe += 'four a ';
 					case  5:                   					subframe += 'three b ';
 					case  4: state = 'three '.concat(state); 	subframe += 'three a ';
-					case  3: state = 'two '.concat(state);   	subframe += 'two a ';  
-					case  2: state = 'one '.concat(state);   	subframe += 'one a ';  
+					case  3: state = 'two '.concat(state);   	subframe += 'two a ';
+					case  2: state = 'one '.concat(state);   	subframe += 'one a ';
 					case  1: 									subframe += 'zero b ';
 					case  0: state = 'zero '.concat(state);  	subframe += 'zero a ';
+
     				default:
-    				 hill_state = 'hill '.concat(state).trim();
-    				 state = 'tree '.concat(state).trim();
-    				 subframe = subframe.split(' ');
-    				 change = (state == tree.attr('class') ? false : true);
-					 subframe = subframe[0] + " " + subframe[1];
-					 $('.dots > .dot').removeClass('active');
-					 $("[data-slide='"+slide+"']").addClass('active');				 
+					hill_state = 'hill '.concat(state).trim();
+					state      = 'tree '.concat(state).trim();
+					subframe   = subframe.split(' ');
+					change     = (state == tree.attr('class') ? false : true);
+					subframe   = subframe[0] + " " + subframe[1];
+					$('.dots > .dot').removeClass('active');
+					$("[data-slide='"+slide+"']").addClass('active');
 				}
 				frame.attr('class', 'frame').find('img, .owl, .dot ,.arrow').one(transitionEvent,function(e){e.stopPropagation();window.event.cancelBubble = true;});;
 				if (change) {
@@ -178,76 +140,84 @@
 					button_disabler = true;
 					slide = parseInt($(this).attr('data-slide'));
 					core(slide);
-				}				
+				}
 			});
-			
+
 		});
 	jQuery(function () {
-		$('.our_team_button').on('click', function(e){	
+		$('.our_team_button').on('click', function(e){
 	    	$('.our_team_button').removeClass('on');
 	    	$("#member_info").removeClass($('#member_info').attr('class').split(' ').pop()).addClass($(this).attr('class').split(' ').pop());
 	    	$(this).addClass('on');
 		});
-		// $('#jill').on('click', function(){	    
+		// $('#jill').on('click', function(){
 	 //    $(this).addClass('member_jill_on');
 		// 	$('#linda').removeClass('member_linda_on');
 		// 	$('#joanna').removeClass('member_joanna_on');
 		// 	$('#peter').removeClass('member_peter_on');
 		// 	$("#member_info").css('background-image', 'url("images/ipad-info-jill.png")');
 		// });
-		
-		// $('#linda').on('click', function(){	    
+
+		// $('#linda').on('click', function(){
 	 //    $(this).addClass('member_linda_on');
 		// 	$('#jill').removeClass('member_jill_on');
 		// 	$('#joanna').removeClass('member_joanna_on');
 		// 	$('#peter').removeClass('member_peter_on');
 		// 	$("#member_info").css('background-image', 'url("images/ipad-info-linda.png")');
 		// });
-		
-		// $('#joanna').on('click', function(){	    
+
+		// $('#joanna').on('click', function(){
 	 //    $(this).addClass('member_joanna_on');
 		// 	$('#jill').removeClass('member_jill_on');
 		// 	$('#linda').removeClass('member_linda_on');
 		// 	$('#peter').removeClass('member_peter_on');
 		// 	$("#member_info").css('background-image', 'url("images/ipad-info-joanna.png")');
 		// });
-		
-		// $('#peter').on('click', function(){	    
+
+		// $('#peter').on('click', function(){
 	 //    $(this).addClass('member_peter_on');
 		// 	$('#jill').removeClass('member_jill_on');
 		// 	$('#linda').removeClass('member_linda_on');
 		// 	$('#joanna').removeClass('member_joanna_on');
 		// 	$("#member_info").css('background-image', 'url("images/ipad-info-peter6.png")');
 		// });
-        	
-    });
-	yam.connect.embedFeed({
-		container: "#embedded-feed",
-		network: "its.jnj.com",
-		feedType: "group",
-		feedId: "15055970",
-		config: {
-             header: "false"      // specify no header 
-        }
-	});
 
-	jQuery('#video').magnificPopup({
-        type: 'iframe',
-        items: {
-	     		src:'https://player.vimeo.com/video/301213705'
-     		},
-    		iframe: {
-    		    patterns: {
-    		        vimeo: {
-    		            index: 'vimeo.com/', 
-    		            id: function(url) {        
-    		                var m = url.match(/(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/);
-    		                if ( !m || !m[5] ) return null;
-    		                return m[5];
-    		            },
-    		            src: 'https://player.vimeo.com/video/%id%?autoplay=1&title=0&byline=0'
-    		        }
-    		    }
-    		},
-    		enableEscapeKey: false,
+    });
+	// yam.connect.embedFeed({
+	// 	container: "#embedded-feed",
+	// 	network: "its.jnj.com",
+	// 	feedType: "group",
+	// 	feedId: "15055970",
+	// 	config: {
+ //             header: "false"      // specify no header
+ //        }
+	// });
+
+		$('#video').magnificPopup({
+		    type: 'inline',
+		    items: {
+		    	src: '<div class="mfp-iframe-scaler video_con">'+
+		    			'<div class="video_con">'+
+		                	'<button title="Close (Esc)" type="button" class="mfp-close">x</button>'+
+		                	'<video id="video_pop" loop playsinline controls>'+
+								'<source src="images/JnJ_KMC.mp4" type="video/mp4" />'+
+							'</video>'+
+						'</div>'+
+		             '</div>',
+		    },
+			callbacks: {
+        		open: function() {
+        			$('#video_pop').get(0).play();
+        		},
+        		close: function() {
+        			$('#video_pop').get(0).pause();
+        		}
+        	}
+
+		});
+		$('#image').magnificPopup({
+		    items: {
+		      src: './images/popup_sign.png'
+		    },
+		    type: 'image'
 		});
