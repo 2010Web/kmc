@@ -217,7 +217,7 @@
 		});
 		$('#image').magnificPopup({
 		    items: {
-		      src: './images/popup_sign.png'
+		      src: './images/popup_sign_2.png'
 		    },
 		    type: 'image'
 		});
